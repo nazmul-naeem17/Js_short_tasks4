@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove Space</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+      p {
+        color: chartreuse;
+        border: 2px solid blue;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+        background-color: black;
+        height: 250px;
+        width: 320px;
+        overflow: hidden;
+      }
+      h2 {
+        text-align: center;
+        color: blueviolet;
+        border: 2px solid gray;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: antiquewhite;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Make a function that removes any space from the string</h1>
+    <p>
+      function spaceRemove(str) { let result = ''; for (let i = 0; i <
+      str.length; i++) { if (str[i] !== ' ') { result += str[i]; } } return
+      result; } let stringWithSpaces = 'My name is Nazmul Hasan';
+      stringWithoutSpaces = spaceRemove(stringWithSpaces);
+      console.log(stringWithoutSpaces);//Output: MynameisNazmulHasan
+    </p>
+    <h2>Check Console</h2>
+    <script>
+      function spaceRemove(str) {
+        let result = "";
+        for (let i = 0; i < str.length; i++) {
+          if (str[i] !== " ") {
+            result += str[i];
+          }
+        }
+        return result;
+      }
+      let stringWithSpaces = "My name is Nazmul Hasan";
+      stringWithoutSpaces = spaceRemove(stringWithSpaces);
+      console.log(stringWithoutSpaces);
+    </script>
+  </body>
+</html>

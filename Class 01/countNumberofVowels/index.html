@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Count Vowels</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+      p {
+        color: chartreuse;
+        border: 2px solid blue;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+        background-color: black;
+        height: 250px;
+        width: 320px;
+        overflow: hidden;
+      }
+      h2 {
+        text-align: center;
+        color: blueviolet;
+        border: 2px solid gray;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: antiquewhite;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Make a function that counts the number of vowels in a string without ‘a’
+    </h1>
+    <p>
+      function countVowels(str) { let count = 0; let vowels = ['e', 'i', 'o',
+      'u']; for (let i = 0; i < str.length; i++) { if (vowels.includes(str[i]))
+      { count++; } } return count; } let inputString = 'Hello, world!'; let
+      vowelCount = countVowels(inputString); console.log(vowelCount);//Output:3
+    </p>
+
+    <h3>Check Console</h3>
+    <script>
+      function countVowels(str) {
+        let count = 0;
+        let vowels = ["e", "i", "o", "u"];
+        for (let i = 0; i < str.length; i++) {
+          if (vowels.includes(str[i])) {
+            count++;
+          }
+        }
+        return count;
+      }
+      let inputString = "Hello, world!";
+      let vowelCount = countVowels(inputString);
+      console.log(vowelCount); //Output:3
+    </script>
+  </body>
+</html>

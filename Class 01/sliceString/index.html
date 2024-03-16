@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SliceString</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+      p {
+        color: chartreuse;
+        border: 2px solid blue;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+        background-color: black;
+        height: 200px;
+        width: 250px;
+      }
+      h2 {
+        text-align: center;
+        color: blueviolet;
+        border: 2px solid gray;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: antiquewhite;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>sliceString(str, start, end)</h1>
+    <p>
+      function sliceStr(str, start, end) { let slicedstr = ""; for (let i =
+      start; i < end; i++) { slicedstr += str[i]; } return slicedstr; } let
+      inputString = "Hello world!"; slicedString = sliceStr(inputString, 1, 5);
+      console.log(slicedString);
+    </p>
+    <h2>Check Console for output</h2>
+    <script>
+      function sliceStr(str, start, end) {
+        let slicedstr = "";
+        for (let i = start; i < end; i++) {
+          slicedstr += str[i];
+        }
+        return slicedstr;
+      }
+      let inputString = "Hello world!";
+      slicedString = sliceStr(inputString, 1, 5);
+      console.log(slicedString);
+    </script>
+  </body>
+</html>
